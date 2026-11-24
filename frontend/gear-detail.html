@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="assets/font_pj.css" rel="stylesheet"/>
+<link href="assets/font_ms.css" rel="stylesheet"/>
+<link href="assets/app.css" rel="stylesheet"/>
+<script src="assets/vendor/tailwind.js"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "text-tertiary": "#94A3B8", "court-volt": "#84F329", "background": "#faf8ff", "glass-border": "rgba(255, 255, 255, 0.75)", "macaron-sky": "#E0F2FE", "on-secondary-container": "#004d6a", "text-secondary": "#64748B", "inverse-on-surface": "#eef0ff", "surface-bright": "#faf8ff", "canvas-cream": "#F8FAFC", "secondary-fixed": "#c4e7ff", "glass-surface": "rgba(255, 255, 255, 0.68)", "inverse-primary": "#76df2d", "surface-tint": "#306c00", "surface-container": "#eaedff", "tertiary-fixed-dim": "#ffafd3", "on-secondary": "#ffffff", "surface-container-low": "#f2f3ff", "error": "#ba1a1a", "primary-container": "#7ae332", "glass-overlay": "rgba(15, 23, 42, 0.40)", "tertiary-container": "#ffb5d6", "on-primary": "#ffffff", "on-primary-fixed-variant": "#225100", "on-tertiary": "#ffffff", "on-surface": "#131b2e", "macaron-rose": "#FCE7F3", "secondary-fixed-dim": "#7bd0ff", "on-tertiary-container": "#982669", "surface-container-highest": "#dae2fd", "on-tertiary-fixed-variant": "#85145a", "surface-container-high": "#e2e7ff", "on-surface-variant": "#3f4a37", "on-error": "#ffffff", "on-primary-fixed": "#0a2100", "outline": "#6f7b65", "text-primary": "#0F172A", "surface-container-lowest": "#ffffff", "primary-fixed-dim": "#76df2d", "error-container": "#ffdad6", "macaron-lime": "#D9F99D", "tertiary": "#a43073", "inverse-surface": "#283044", "surface-dim": "#d2d9f4", "outline-variant": "#bfcab1", "surface": "#faf8ff", "on-secondary-fixed": "#001e2c", "primary": "#306c00", "surface-variant": "#dae2fd", "on-primary-container": "#2b6100", "on-error-container": "#93000a", "secondary-container": "#40c2fd", "secondary": "#00668a", "on-secondary-fixed-variant": "#004c69", "tertiary-fixed": "#ffd8e7", "on-tertiary-fixed": "#3d0026", "primary-fixed": "#91fc4a", "on-background": "#131b2e" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-md": "0.75rem", "space-lg": "1rem", "gutter": "0.5rem", "space-xs": "0.25rem", "margin": "0.75rem", "space-xl": "1.25rem", "space-2xl": "1.75rem", "margin-detail": "1rem", "space-sm": "0.5rem" }, "fontFamily": { "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "title-sm": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "label-mini": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"] }, "fontSize": { "headline-xl-mobile": ["26px", { "lineHeight": "34px", "fontWeight": "800" }], "headline-lg": ["22px", { "lineHeight": "30px", "fontWeight": "700" }], "title-sm": ["16px", { "lineHeight": "22px", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "22.4px", "fontWeight": "400" }], "label-mini": ["10px", { "lineHeight": "12px", "fontWeight": "500" }], "body-lg": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "label-md": ["13px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-xl": ["32px", { "lineHeight": "40px", "fontWeight": "800" }], "headline-md": ["18px", { "lineHeight": "24px", "fontWeight": "700" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#faf8ff;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen relative antialiased"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)] pt-safe"><div class="h-6 px-margin flex items-center justify-between text-text-primary text-[13px] font-semibold tracking-tight select-none"><span>9:41</span><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">signal_cellular_alt</span><span class="material-symbols-outlined text-[16px]">wifi</span><span class="material-symbols-outlined text-[18px]">battery_full</span></div></div><div class="h-14 px-margin-detail flex items-center justify-between"><div class="flex items-center gap-space-xs"><button class="w-11 h-11 flex items-center justify-center rounded-full text-text-primary hover:bg-surface-container/60 transition-colors" onclick="if(history.length>1){history.back()}else{location.href='index.html'}"><span class="material-symbols-outlined text-[24px]">arrow_back_ios_new</span></button><h1 class="font-headline-md text-headline-md text-text-primary tracking-tight">Gear Detail</h1></div><div class="flex items-center gap-space-sm"><button class="w-11 h-11 flex items-center justify-center rounded-full text-text-secondary hover:text-text-primary hover:bg-surface-container/60 transition-colors"><span class="material-symbols-outlined text-[22px]">share</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-20 pb-safe bg-surface min-h-screen"><div class="flex flex-col w-full pb-32">
+<!-- M2: Main Image Carousel / Gallery Section -->
+<section class="relative w-full px-margin-detail pt-space-xs">
+<div class="relative w-full aspect-[4/3] rounded-[24px] overflow-hidden shadow-[0_12px_32px_-6px_rgba(15,23,42,0.12)] bg-surface-container-low">
+<div class="flex w-full h-full overflow-x-auto snap-x snap-mandatory scroll-smooth no-scrollbar" id="carouselTrack" onscroll="handleGalleryScroll(this)">
+<div class="w-full h-full flex-shrink-0 snap-center relative">
+<img class="w-full h-full object-cover" data-alt="High-end pickleball paddle close up shot showing raw T700 carbon fiber woven texture, modern pastel mint green and cyan gradient rim accents, premium matte finish in bright clean natural sunlight with crisp micro-shadows" src="assets/img/img_05.jpg"/>
+</div>
+<div class="w-full h-full flex-shrink-0 snap-center relative">
+<img class="w-full h-full object-cover" data-alt="Ergonomic handle and perforated grip wrap detail of a premium pickleball paddle, pastel tones, clean white background with soft warm indoor court ambient reflections" src="assets/img/img_18.jpg"/>
+</div>
+<div class="w-full h-full flex-shrink-0 snap-center relative">
+<img class="w-full h-full object-cover" data-alt="Angle view of a high performance pickleball paddle showing edge guard durability and 16mm thick honeycomb core profile against a vibrant sunny outdoor court backdrop" src="assets/img/img_21.jpg"/>
+</div>
+<div class="w-full h-full flex-shrink-0 snap-center relative">
+<img class="w-full h-full object-cover" data-alt="Dynamic shot of a pickleball resting balanced on the sweet spot surface of an electric volt and matte carbon paddle under sunny morning light" src="assets/img/img_20.jpg"/>
+</div>
+<div class="w-full h-full flex-shrink-0 snap-center relative">
+<img class="w-full h-full object-cover" data-alt="Minimalist flat lay product photography of a modern designer pickleball paddle with matching wristband and neon ball on a clean pastel aesthetic surface" src="assets/img/img_25.jpg"/>
+</div>
+</div>
+<!-- Quick Category Floating Pill -->
+<div class="absolute top-3 left-3 px-3 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md shadow-sm flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label-mini text-label-mini text-text-primary uppercase tracking-wider">OFFICIAL SPEC</span>
+</div>
+<!-- Carousel Pagination Pill -->
+<div class="absolute bottom-3 right-3 px-3 py-1 rounded-full bg-text-primary/70 backdrop-blur-md text-surface-container-lowest font-label-sm text-label-sm tracking-widest flex items-center gap-1">
+<span class="font-semibold" id="currentIndex">1</span>
+<span class="opacity-60">/</span>
+<span class="opacity-60">5</span>
+</div>
+</div>
+</section>
+<!-- M3: Product Identification & Selling Highlights -->
+<section class="px-margin-detail pt-space-lg flex flex-col gap-space-xs">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-full bg-macaron-sky text-on-secondary-container font-label-sm text-label-sm font-semibold">匹克球拍</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-text-secondary font-label-mini text-label-mini">进阶控球系列</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-text-primary tracking-tight mt-1">
+      Veloce C-100 全碳纤维初学进阶球拍
+    </h1>
+<div class="flex flex-wrap items-center gap-2 mt-2">
+<div class="flex items-center gap-1 px-3 py-1 rounded-full bg-macaron-lime text-on-primary-container font-label-sm text-label-sm shadow-[0_2px_8px_rgba(217,249,157,0.4)]">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">eco</span>
+<span>新手友好</span>
+</div>
+<div class="flex items-center gap-1 px-3 py-1 rounded-full bg-macaron-sky text-on-secondary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px]">clock_loader_40</span>
+<span>超轻手感</span>
+</div>
+<div class="flex items-center gap-1 px-3 py-1 rounded-full bg-macaron-rose text-on-tertiary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px]">palette</span>
+<span>高颜值配色</span>
+</div>
+</div>
+</section>
+<!-- M4: Specifications Grid (Glassmorphism Cards) -->
+<section class="px-margin-detail pt-space-xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-2.5 h-2.5 rounded-full bg-primary"></div>
+<h2 class="font-headline-md text-headline-md text-text-primary tracking-tight">规格参数</h2>
+</div>
+<span class="font-label-sm text-label-sm text-text-tertiary">PRD 8.9.1 认证</span>
+</div>
+<!-- Dual Column Glass Specs Bento -->
+<div class="grid grid-cols-2 gap-space-sm mt-1">
+<!-- Weight Metric Card -->
+<div class="p-3.5 rounded-[20px] bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_8px_20px_-4px_rgba(148,163,184,0.14)] flex flex-col justify-between">
+<div class="w-8 h-8 rounded-full bg-macaron-lime/60 flex items-center justify-center text-primary mb-2">
+<span class="material-symbols-outlined text-[18px]">scale</span>
+</div>
+<div>
+<span class="font-label-mini text-label-mini text-text-tertiary uppercase tracking-wider block">标称重量</span>
+<p class="font-title-sm text-title-sm text-text-primary mt-0.5">215g ± 5g</p>
+<span class="font-body-sm text-body-sm text-text-secondary">超轻羽量减负</span>
+</div>
+</div>
+<!-- Surface Material Card -->
+<div class="p-3.5 rounded-[20px] bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_8px_20px_-4px_rgba(148,163,184,0.14)] flex flex-col justify-between">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-text-primary mb-2">
+<span class="material-symbols-outlined text-[18px]">texture</span>
+</div>
+<div>
+<span class="font-label-mini text-label-mini text-text-tertiary uppercase tracking-wider block">拍面材质</span>
+<p class="font-title-sm text-title-sm text-text-primary mt-0.5">T700 碳纤维</p>
+<span class="font-body-sm text-body-sm text-text-secondary">磨砂微孔咬球</span>
+</div>
+</div>
+<!-- Core Spec Card -->
+<div class="p-3.5 rounded-[20px] bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_8px_20px_-4px_rgba(148,163,184,0.14)] flex flex-col justify-between">
+<div class="w-8 h-8 rounded-full bg-macaron-sky/60 flex items-center justify-center text-secondary mb-2">
+<span class="material-symbols-outlined text-[18px]">hive</span>
+</div>
+<div>
+<span class="font-label-mini text-label-mini text-text-tertiary uppercase tracking-wider block">核心结构</span>
+<p class="font-title-sm text-title-sm text-text-primary mt-0.5">16mm 蜂窝</p>
+<span class="font-body-sm text-body-sm text-text-secondary">高聚合物强吸震</span>
+</div>
+</div>
+<!-- Handle Circumference Card -->
+<div class="p-3.5 rounded-[20px] bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_8px_20px_-4px_rgba(148,163,184,0.14)] flex flex-col justify-between">
+<div class="w-8 h-8 rounded-full bg-macaron-rose/60 flex items-center justify-center text-tertiary mb-2">
+<span class="material-symbols-outlined text-[18px]">pan_tool</span>
+</div>
+<div>
+<span class="font-label-mini text-label-mini text-text-tertiary uppercase tracking-wider block">拍柄周长</span>
+<p class="font-title-sm text-title-sm text-text-primary mt-0.5">108mm</p>
+<span class="font-body-sm text-body-sm text-text-secondary">细腻手胶握感</span>
+</div>
+</div>
+</div>
+<!-- Full Width Target Audience Card -->
+<div class="p-4 rounded-[20px] bg-gradient-to-r from-macaron-sky/30 to-macaron-lime/30 backdrop-blur-xl shadow-[0_8px_20px_-4px_rgba(148,163,184,0.12)] flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">groups</span>
+</div>
+<div>
+<span class="font-label-mini text-label-mini text-text-secondary uppercase tracking-wider">适合球友群体</span>
+<p class="font-title-sm text-title-sm text-text-primary">新手入门至进阶控球型球友</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-text-tertiary text-[20px]">check_circle</span>
+</div>
+</section>
+<!-- M6: Feature Narrative Section -->
+<section class="px-margin-detail pt-space-xl flex flex-col gap-space-sm">
+<div class="flex items-center gap-2">
+<div class="w-2.5 h-2.5 rounded-full bg-court-volt"></div>
+<h2 class="font-headline-md text-headline-md text-text-primary tracking-tight">核心性能亮点</h2>
+</div>
+<div class="p-4 rounded-[24px] bg-surface-container-lowest/90 backdrop-blur-md shadow-[0_8px_24px_-4px_rgba(148,163,184,0.15)] flex flex-col gap-3">
+<div class="flex items-start gap-3">
+<div class="w-7 h-7 rounded-full bg-primary-container/30 flex items-center justify-center text-primary flex-shrink-0 mt-0.5">
+<span class="font-label-sm text-label-sm font-bold">01</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-title-sm text-title-sm text-text-primary font-semibold">新手控球超强容错率</h3>
+<p class="font-body-md text-body-md text-text-secondary mt-1">
+            采用独家扩展型甜区设计（Wide-Body Geometry），即使非中心击球也能维持平稳抛物线轨迹，极大降低出界与网下失误率。
+          </p>
+</div>
+</div>
+<div class="h-[1px] bg-surface-container-high/60 w-full my-1"></div>
+<div class="flex items-start gap-3">
+<div class="w-7 h-7 rounded-full bg-macaron-sky flex items-center justify-center text-secondary flex-shrink-0 mt-0.5">
+<span class="font-label-sm text-label-sm font-bold">02</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-title-sm text-title-sm text-text-primary font-semibold">16mm 聚合物蜂窝缓冲降噪</h3>
+<p class="font-body-md text-body-md text-text-secondary mt-1">
+            针对网前丁克球（Dink）与阻截击球，内部高密度聚合物有效吸收瞬间击球震动，护腕柔和的同时呈现更柔韧舒适的手感反馈。
+          </p>
+</div>
+</div>
+<div class="h-[1px] bg-surface-container-high/60 w-full my-1"></div>
+<div class="flex items-start gap-3">
+<div class="w-7 h-7 rounded-full bg-macaron-rose flex items-center justify-center text-tertiary flex-shrink-0 mt-0.5">
+<span class="font-label-sm text-label-sm font-bold">03</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-title-sm text-title-sm text-text-primary font-semibold">微磨砂碳面旋球科技</h3>
+<p class="font-body-md text-body-md text-text-secondary mt-1">
+            T700 表层赋予拍面持久的原生摩擦力，使切削发球与上旋拉球充满攻击旋转，实现灵敏落点掌控。
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- M5: Real Court Scenarios (Side-by-side Showcase) -->
+<section class="px-margin-detail pt-space-xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-2.5 h-2.5 rounded-full bg-secondary"></div>
+<h2 class="font-headline-md text-headline-md text-text-primary tracking-tight">球友实拍展示</h2>
+</div>
+<span class="font-label-sm text-label-sm text-text-secondary">现场上镜打卡</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Scenario Card 1 -->
+<div class="flex flex-col rounded-[20px] overflow-hidden bg-surface-container-lowest shadow-sm">
+<div class="relative w-full aspect-[3/4]">
+<img class="w-full h-full object-cover" data-alt="Stylish young female pickleball player wearing athletic chic white apparel, holding the pastel-accented paddle smiling at an energetic outdoor sunlit court, warm tones aesthetic" src="assets/img/img_12.jpg"/>
+<div class="absolute bottom-2 left-2 px-2 py-0.5 rounded-full bg-text-primary/60 backdrop-blur-md text-surface-container-lowest font-label-mini text-label-mini">
+            @Chloe 场边留影
+          </div>
+</div>
+<div class="p-2.5 flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-text-secondary truncate">「浅绿很衬阳光出片」</span>
+<span class="material-symbols-outlined text-[16px] text-tertiary" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+</div>
+<!-- Scenario Card 2 -->
+<div class="flex flex-col rounded-[20px] overflow-hidden bg-surface-container-lowest shadow-sm">
+<div class="relative w-full aspect-[3/4]">
+<img class="w-full h-full object-cover" data-alt="Athletic urban pickleball player performing a ready dink stance at the non-volley kitchen line with the high-tech paddle in clear focus, sharp outdoor lighting" src="assets/img/img_11.jpg"/>
+<div class="absolute bottom-2 left-2 px-2 py-0.5 rounded-full bg-text-primary/60 backdrop-blur-md text-surface-container-lowest font-label-mini text-label-mini">
+            @Leo 控球热身
+          </div>
+</div>
+<div class="p-2.5 flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-text-secondary truncate">「握柄很顺手，不累腕」</span>
+<span class="material-symbols-outlined text-[16px] text-tertiary" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+</div>
+</div>
+</section>
+<!-- M7: Operational Disclaimer -->
+<section class="px-margin-detail pt-space-lg text-center">
+<div class="py-3 px-4 rounded-xl bg-surface-container-low/60 flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-[14px] text-text-tertiary">info</span>
+<p class="font-body-sm text-body-sm text-text-tertiary">
+        参数与展示信息由运营维护，仅供参考
+      </p>
+</div>
+</section>
+<!-- M9: Bottom Floating Action Bar (Safe Area Compliant, strictly non-transactional) -->
+<nav class="fixed bottom-3 inset-x-margin-detail z-40 max-w-[420px] mx-auto">
+<div class="p-2 rounded-full bg-surface-container-lowest/90 backdrop-blur-2xl shadow-[0_16px_36px_-6px_rgba(15,23,42,0.18)] flex items-center justify-between gap-space-sm">
+<!-- Left: Share Card Capsule Button -->
+<button class="w-12 h-12 flex-shrink-0 rounded-full bg-surface-container/70 active:scale-95 transition-transform flex items-center justify-center text-text-primary shadow-sm hover:bg-surface-container" onclick="handleShareClick()">
+<span class="material-symbols-outlined text-[22px]">ios_share</span>
+</button>
+<!-- Right: Main Bookmark CTA with Lime-Volt Glow -->
+<button class="flex-1 h-12 px-5 rounded-full bg-primary-container text-on-primary-container active:scale-[0.97] transition-all flex items-center justify-center gap-2 shadow-[0_6px_20px_rgba(122,227,50,0.45)]" id="favoriteBtn" onclick="toggleFavorite()">
+<span class="material-symbols-outlined text-[20px] transition-transform duration-200" id="favHeartIcon">favorite</span>
+<span class="font-label-md text-label-md font-bold tracking-tight" id="favText">收藏这款装备</span>
+<span class="font-label-mini text-label-mini opacity-75 hidden sm:inline">(可多端同步)</span>
+</button>
+</div>
+</nav>
+<!-- Delight Micro-Interaction Toast -->
+<div class="fixed top-24 inset-x-0 mx-auto w-fit z-50 px-4 py-2 rounded-full bg-text-primary/90 backdrop-blur-lg text-surface-container-lowest font-body-sm text-body-sm shadow-xl flex items-center gap-2 opacity-0 -translate-y-4 pointer-events-none transition-all duration-300" id="toastNotification">
+<span class="material-symbols-outlined text-[18px] text-court-volt" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span id="toastMsg">已添加至「我的装备库」</span>
+</div>
+</div>
+<script>
+  function handleGalleryScroll(el) {
+    const slideWidth = el.offsetWidth;
+    const current = Math.round(el.scrollLeft / slideWidth) + 1;
+    const indexLabel = document.getElementById('currentIndex');
+    if (indexLabel && current >= 1 && current <= 5) {
+      indexLabel.textContent = current;
+    }
+  }
+
+  let isFavorited = false;
+  function toggleFavorite() {
+    isFavorited = !isFavorited;
+    const btn = document.getElementById('favoriteBtn');
+    const heart = document.getElementById('favHeartIcon');
+    const text = document.getElementById('favText');
+    const toast = document.getElementById('toastNotification');
+    const toastMsg = document.getElementById('toastMsg');
+
+    if (isFavorited) {
+      heart.style.fontVariationSettings = "'FILL' 1";
+      heart.classList.add('scale-125');
+      setTimeout(() => heart.classList.remove('scale-125'), 200);
+      text.textContent = '已收藏至清单';
+      toastMsg.textContent = '已收藏！支持全平台同步展示';
+    } else {
+      heart.style.fontVariationSettings = "'FILL' 0";
+      text.textContent = '收藏这款装备';
+      toastMsg.textContent = '已从收藏夹移除';
+    }
+
+    // Trigger feedback toast
+    if (toast) {
+      toast.classList.remove('opacity-0', '-translate-y-4');
+      toast.classList.add('opacity-100', 'translate-y-0');
+      setTimeout(() => {
+        toast.classList.remove('opacity-100', 'translate-y-0');
+        toast.classList.add('opacity-0', '-translate-y-4');
+      }, 2000);
+    }
+  }
+
+  function handleShareClick() {
+    const toast = document.getElementById('toastNotification');
+    const toastMsg = document.getElementById('toastMsg');
+    if (toast && toastMsg) {
+      toastMsg.textContent = '已生成球拍专属美图海报';
+      toast.classList.remove('opacity-0', '-translate-y-4');
+      toast.classList.add('opacity-100', 'translate-y-0');
+      setTimeout(() => {
+        toast.classList.remove('opacity-100', 'translate-y-0');
+        toast.classList.add('opacity-0', '-translate-y-4');
+      }, 2000);
+    }
+  }
+</script></main><div id="pxj-toast" role="status" aria-live="polite" style="position:fixed;left:50%;bottom:96px;transform:translateX(-50%) translateY(16px);z-index:9999;background:rgba(15,23,42,.92);color:#fff;padding:10px 18px;border-radius:999px;font-size:13px;line-height:1.4;opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;box-shadow:0 10px 30px rgba(0,0,0,.22);white-space:nowrap;max-width:88vw;overflow:hidden;text-overflow:ellipsis"></div>
+<script>
+function pxjToast(msg){
+  var t=document.getElementById('pxj-toast');
+  if(!t)return;
+  t.textContent=msg;
+  t.style.opacity='1';
+  t.style.transform='translateX(-50%) translateY(0)';
+  clearTimeout(window._pxjToastTimer);
+  window._pxjToastTimer=setTimeout(function(){
+    t.style.opacity='0';
+    t.style.transform='translateX(-50%) translateY(16px)';
+  },2000);
+}
+</script></body></html>

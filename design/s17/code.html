@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "text-tertiary": "#94A3B8", "court-volt": "#84F329", "background": "#faf8ff", "glass-border": "rgba(255, 255, 255, 0.75)", "macaron-sky": "#E0F2FE", "on-secondary-container": "#004d6a", "text-secondary": "#64748B", "inverse-on-surface": "#eef0ff", "surface-bright": "#faf8ff", "canvas-cream": "#F8FAFC", "secondary-fixed": "#c4e7ff", "glass-surface": "rgba(255, 255, 255, 0.68)", "inverse-primary": "#76df2d", "surface-tint": "#306c00", "surface-container": "#eaedff", "tertiary-fixed-dim": "#ffafd3", "on-secondary": "#ffffff", "surface-container-low": "#f2f3ff", "error": "#ba1a1a", "primary-container": "#7ae332", "glass-overlay": "rgba(15, 23, 42, 0.40)", "tertiary-container": "#ffb5d6", "on-primary": "#ffffff", "on-primary-fixed-variant": "#225100", "on-tertiary": "#ffffff", "on-surface": "#131b2e", "macaron-rose": "#FCE7F3", "secondary-fixed-dim": "#7bd0ff", "on-tertiary-container": "#982669", "surface-container-highest": "#dae2fd", "on-tertiary-fixed-variant": "#85145a", "surface-container-high": "#e2e7ff", "on-surface-variant": "#3f4a37", "on-error": "#ffffff", "on-primary-fixed": "#0a2100", "outline": "#6f7b65", "text-primary": "#0F172A", "surface-container-lowest": "#ffffff", "primary-fixed-dim": "#76df2d", "error-container": "#ffdad6", "macaron-lime": "#D9F99D", "tertiary": "#a43073", "inverse-surface": "#283044", "surface-dim": "#d2d9f4", "outline-variant": "#bfcab1", "surface": "#faf8ff", "on-secondary-fixed": "#001e2c", "primary": "#306c00", "surface-variant": "#dae2fd", "on-primary-container": "#2b6100", "on-error-container": "#93000a", "secondary-container": "#40c2fd", "secondary": "#00668a", "on-secondary-fixed-variant": "#004c69", "tertiary-fixed": "#ffd8e7", "on-tertiary-fixed": "#3d0026", "primary-fixed": "#91fc4a", "on-background": "#131b2e" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-md": "0.75rem", "space-lg": "1rem", "gutter": "0.5rem", "space-xs": "0.25rem", "margin": "0.75rem", "space-xl": "1.25rem", "space-2xl": "1.75rem", "margin-detail": "1rem", "space-sm": "0.5rem" }, "fontFamily": { "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "title-sm": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "label-mini": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"] }, "fontSize": { "headline-xl-mobile": ["26px", { "lineHeight": "34px", "fontWeight": "800" }], "headline-lg": ["22px", { "lineHeight": "30px", "fontWeight": "700" }], "title-sm": ["16px", { "lineHeight": "22px", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "22.4px", "fontWeight": "400" }], "label-mini": ["10px", { "lineHeight": "12px", "fontWeight": "500" }], "body-lg": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "label-md": ["13px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-xl": ["32px", { "lineHeight": "40px", "fontWeight": "800" }], "headline-md": ["18px", { "lineHeight": "24px", "fontWeight": "700" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#faf8ff;}body{overscroll-behavior:none;min-height:max(884px,100dvh);}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen relative antialiased"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)] pt-safe"><div class="h-6 px-margin flex items-center justify-between text-text-primary font-label-md text-label-md select-none"><span>9:41</span><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">signal_cellular_alt</span><span class="material-symbols-outlined text-[16px]">wifi</span><span class="material-symbols-outlined text-[18px]">battery_full</span></div></div><div class="h-14 px-margin-detail flex items-center justify-between"><div class="flex items-center gap-space-xs"><button aria-label="返回" class="w-11 h-11 flex items-center justify-center rounded-full text-text-primary hover:bg-surface-container/60 transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back_ios_new</span></button><h1 class="font-headline-md text-headline-md text-text-primary tracking-tight">S17 意见反馈</h1></div><div class="flex items-center gap-space-sm"><button aria-label="更多操作" class="w-11 h-11 flex items-center justify-center rounded-full text-text-secondary hover:text-text-primary hover:bg-surface-container/60 transition-colors"><span class="material-symbols-outlined text-[22px]">more_horiz</span></button></div></div></header><main class="flex flex-col relative w-full pt-20 pb-safe bg-surface min-h-screen"><div class="flex flex-col w-full px-margin-detail pb-space-2xl">
+<!-- Friendly Guidance Banner with Tactile Glass Depth -->
+<div class="relative w-full rounded-2xl p-space-md mb-space-lg bg-surface-container-low shadow-sm overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-court-volt/15 blur-xl pointer-events-none"></div>
+<div class="flex items-start gap-space-sm relative z-10">
+<div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</div>
+<div class="flex-1 min-w-0">
+<p class="font-title-sm text-title-sm text-text-primary tracking-tight mb-0.5">听见每一个挥拍的声音</p>
+<p class="font-body-sm text-body-sm text-text-secondary leading-relaxed">
+          您的每一个建议，都在让匹小将变得更好。我们将在 24 小时内认真评估并跟进处理。
+        </p>
+</div>
+</div>
+</div>
+<!-- Feedback Form -->
+<form class="flex flex-col gap-space-lg" id="feedback-form" onsubmit="event.preventDefault(); triggerSubmitAnim();">
+<!-- Section 1: Feedback Type Chips -->
+<div class="flex flex-col">
+<div class="flex items-center justify-between mb-space-sm">
+<label class="font-title-sm text-title-sm text-text-primary flex items-center gap-1.5">
+<span>反馈类型</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+</label>
+<span class="font-label-mini text-label-mini text-text-tertiary">单选</span>
+</div>
+<div class="flex flex-wrap gap-2" id="feedback-chips">
+<!-- Selected Chip -->
+<button class="feedback-type-chip group flex items-center gap-1.5 px-3.5 py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest text-text-primary shadow-sm hover:scale-[0.98] transition-all duration-200" data-selected="true" type="button">
+<span class="chip-icon material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>功能异常 / 缺陷</span>
+</button>
+<!-- Unselected Chips -->
+<button class="feedback-type-chip group flex items-center gap-1.5 px-3.5 py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest text-text-secondary shadow-sm hover:scale-[0.98] transition-all duration-200" data-selected="false" type="button">
+<span class="chip-icon hidden material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>内容信息有误</span>
+</button>
+<button class="feedback-type-chip group flex items-center gap-1.5 px-3.5 py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest text-text-secondary shadow-sm hover:scale-[0.98] transition-all duration-200" data-selected="false" type="button">
+<span class="chip-icon hidden material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>体验改进建议</span>
+</button>
+<button class="feedback-type-chip group flex items-center gap-1.5 px-3.5 py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest text-text-secondary shadow-sm hover:scale-[0.98] transition-all duration-200" data-selected="false" type="button">
+<span class="chip-icon hidden material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>球场/装备纠错</span>
+</button>
+<button class="feedback-type-chip group flex items-center gap-1.5 px-3.5 py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest text-text-secondary shadow-sm hover:scale-[0.98] transition-all duration-200" data-selected="false" type="button">
+<span class="chip-icon hidden material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>其他问题</span>
+</button>
+</div>
+</div>
+<!-- Section 2: Detailed Description Box -->
+<div class="flex flex-col">
+<div class="flex items-center justify-between mb-space-sm">
+<label class="font-title-sm text-title-sm text-text-primary flex items-center gap-1.5">
+<span>详细描述</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+</label>
+<span class="font-label-sm text-label-sm text-text-tertiary">清晰描述更易定位</span>
+</div>
+<div class="relative w-full rounded-2xl bg-surface-container-lowest p-space-md shadow-sm transition-all focus-within:shadow-md">
+<textarea class="w-full bg-transparent resize-none font-body-md text-body-md text-text-primary placeholder:text-text-tertiary outline-none leading-relaxed" id="feedback-text" maxlength="200" placeholder="请详细描述您遇到的问题或宝贵建议（不少于5个字，如页面卡顿、场地地址错误等）..." rows="4">在静安大悦城天台场地页面，营业时间建议标注夜场亮灯的具体截止点，体验会更棒！</textarea>
+<!-- Subtle Photo Upload / Tool Bar inside textarea box -->
+<div class="flex items-center justify-between pt-space-xs mt-space-xs">
+<button class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-full bg-surface-container-low text-text-secondary font-label-sm text-label-sm hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px] text-text-secondary">add_photo_alternate</span>
+<span>添加截图</span>
+<span class="text-text-tertiary font-label-mini text-label-mini">0/4</span>
+</button>
+<div class="font-label-sm text-label-sm text-text-tertiary select-none" id="char-counter">
+<span class="text-primary font-title-sm text-title-sm">48</span> / 200 字
+          </div>
+</div>
+</div>
+</div>
+<!-- Section 3: Contact Info (Optional) -->
+<div class="flex flex-col">
+<div class="flex items-center justify-between mb-space-sm">
+<label class="font-title-sm text-title-sm text-text-primary">联系方式（选填）</label>
+<span class="font-label-mini text-label-mini text-text-tertiary">保护隐私 · 仅用于结果回执</span>
+</div>
+<div class="relative w-full rounded-2xl bg-surface-container-lowest px-space-md py-3 shadow-sm flex items-center gap-space-sm focus-within:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-[20px] text-text-tertiary">phone_iphone</span>
+<input class="w-full bg-transparent font-body-md text-body-md text-text-primary placeholder:text-text-tertiary outline-none" placeholder="手机号 / 微信号（方便我们向您反馈处理进展）" type="text" value="138****6688"/>
+<button aria-label="清除联系方式" class="w-8 h-8 flex items-center justify-center rounded-full text-text-tertiary hover:text-text-primary hover:bg-surface-container-low transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">cancel</span>
+</button>
+</div>
+</div>
+<!-- Section 4: FAQ Mini Cards -->
+<div class="flex flex-col mt-space-xs">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-title-sm text-title-sm text-text-primary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-secondary">help_outline</span>
+<span>常见疑问快捷解答</span>
+</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">自助排查</span>
+</div>
+<div class="grid grid-cols-1 gap-2.5">
+<!-- FAQ 1 -->
+<div class="flex items-center justify-between p-space-md rounded-2xl bg-surface-container-low/70 hover:bg-surface-container-low transition-colors cursor-pointer shadow-sm group">
+<div class="flex items-center gap-2.5 min-w-0 pr-2">
+<span class="w-2 h-2 rounded-full bg-secondary-container shrink-0"></span>
+<span class="font-body-md text-body-md text-text-primary truncate">小程序收藏无法在 APP 同步显示？</span>
+</div>
+<div class="flex items-center gap-1 text-secondary shrink-0 font-label-md text-label-md">
+<span>同步解法</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-0.5 transition-transform">chevron_right</span>
+</div>
+</div>
+<!-- FAQ 2 -->
+<div class="flex items-center justify-between p-space-md rounded-2xl bg-surface-container-low/70 hover:bg-surface-container-low transition-colors cursor-pointer shadow-sm group">
+<div class="flex items-center gap-2.5 min-w-0 pr-2">
+<span class="w-2 h-2 rounded-full bg-primary-container shrink-0"></span>
+<span class="font-body-md text-body-md text-text-primary truncate">如何推荐我常去的宝藏匹克球场？</span>
+</div>
+<div class="flex items-center gap-1 text-secondary shrink-0 font-label-md text-label-md">
+<span>场地提报</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-0.5 transition-transform">chevron_right</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Submit Action -->
+<div class="flex flex-col items-center gap-space-sm pt-space-md">
+<button class="w-full h-12 rounded-full bg-primary-container text-on-primary-container font-headline-md text-headline-md flex items-center justify-center gap-2 shadow-[0_8px_20px_-4px_rgba(122,227,50,0.45)] active:scale-[0.97] transition-all duration-150" id="submit-btn" type="submit">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">send</span>
+<span>提交反馈</span>
+</button>
+<div class="flex items-center justify-center gap-1.5 text-text-tertiary">
+<span class="material-symbols-outlined text-[14px]">verified_user</span>
+<span class="font-label-mini text-label-mini">匹小将承诺严格保护您的个人隐私与联系方式</span>
+</div>
+</div>
+</form>
+<!-- Delightful Success Toast Modal (Hidden by Default) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-space-lg pointer-events-none opacity-0 transition-opacity duration-300" id="toast-modal">
+<div class="absolute inset-0 bg-glass-overlay backdrop-blur-sm"></div>
+<div class="relative bg-surface-container-lowest rounded-3xl p-space-xl shadow-xl flex flex-col items-center text-center max-w-xs w-full scale-95 transition-transform duration-300">
+<div class="w-16 h-16 rounded-full bg-court-volt/20 text-primary flex items-center justify-center mb-space-md animate-bounce">
+<span class="material-symbols-outlined text-[36px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-text-primary mb-1">反馈已收到！</h3>
+<p class="font-body-sm text-body-sm text-text-secondary leading-relaxed mb-space-lg">
+        感谢您的真诚建议，匹小将研发团队会在 24 小时内处理并为您更新进度。
+      </p>
+<button class="w-full py-2.5 rounded-full bg-surface-container-high text-text-primary font-label-md text-label-md hover:bg-surface-container-highest transition-colors" onclick="closeToastModal()" type="button">
+        好的，知道了
+      </button>
+</div>
+</div>
+</div>
+<script>
+  // Dynamic Chip selection logic with instant tactile styling
+  const chips = document.querySelectorAll('.feedback-type-chip');
+  chips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      chips.forEach(c => {
+        c.setAttribute('data-selected', 'false');
+        c.classList.remove('bg-macaron-lime/40', 'text-text-primary');
+        c.classList.add('bg-surface-container-lowest', 'text-text-secondary');
+        const icon = c.querySelector('.chip-icon');
+        if (icon) icon.classList.add('hidden');
+      });
+      chip.setAttribute('data-selected', 'true');
+      chip.classList.remove('bg-surface-container-lowest', 'text-text-secondary');
+      chip.classList.add('bg-macaron-lime/40', 'text-text-primary');
+      const activeIcon = chip.querySelector('.chip-icon');
+      if (activeIcon) activeIcon.classList.remove('hidden');
+    });
+  });
+
+  // Initialize selected chip highlight
+  const initialSelected = document.querySelector('.feedback-type-chip[data-selected="true"]');
+  if (initialSelected) {
+    initialSelected.classList.remove('bg-surface-container-lowest', 'text-text-secondary');
+    initialSelected.classList.add('bg-macaron-lime/40', 'text-text-primary');
+    const icon = initialSelected.querySelector('.chip-icon');
+    if (icon) icon.classList.remove('hidden');
+  }
+
+  // Live Character Counting & State Feedback
+  const textarea = document.getElementById('feedback-text');
+  const counter = document.getElementById('char-counter');
+  if (textarea && counter) {
+    textarea.addEventListener('input', () => {
+      const len = textarea.value.length;
+      counter.innerHTML = `<span class="text-primary font-title-sm text-title-sm">${len}</span> / 200 字`;
+    });
+  }
+
+  // Interactive Submit Action Simulation
+  function triggerSubmitAnim() {
+    const submitBtn = document.getElementById('submit-btn');
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<span class="material-symbols-outlined text-[20px] animate-spin">progress_activity</span><span>提交中...</span>';
+      setTimeout(() => {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = '<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: \'FILL\' 1;">send</span><span>提交反馈</span>';
+        openToastModal();
+      }, 700);
+    }
+  }
+
+  function openToastModal() {
+    const modal = document.getElementById('toast-modal');
+    if (modal) {
+      modal.classList.remove('pointer-events-none', 'opacity-0');
+      const inner = modal.querySelector('div.scale-95');
+      if (inner) {
+        inner.classList.remove('scale-95');
+        inner.classList.add('scale-100');
+      }
+    }
+  }
+
+  function closeToastModal() {
+    const modal = document.getElementById('toast-modal');
+    if (modal) {
+      modal.classList.add('opacity-0', 'pointer-events-none');
+      const inner = modal.querySelector('div.scale-100');
+      if (inner) {
+        inner.classList.remove('scale-100');
+        inner.classList.add('scale-95');
+      }
+    }
+  }
+</script></main></body></html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="assets/font_pj.css" rel="stylesheet"/>
+<link href="assets/font_ms.css" rel="stylesheet"/>
+<link href="assets/app.css" rel="stylesheet"/>
+<script src="assets/vendor/tailwind.js"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "text-tertiary": "#94A3B8", "court-volt": "#84F329", "background": "#faf8ff", "glass-border": "rgba(255, 255, 255, 0.75)", "macaron-sky": "#E0F2FE", "on-secondary-container": "#004d6a", "text-secondary": "#64748B", "inverse-on-surface": "#eef0ff", "surface-bright": "#faf8ff", "canvas-cream": "#F8FAFC", "secondary-fixed": "#c4e7ff", "glass-surface": "rgba(255, 255, 255, 0.68)", "inverse-primary": "#76df2d", "surface-tint": "#306c00", "surface-container": "#eaedff", "tertiary-fixed-dim": "#ffafd3", "on-secondary": "#ffffff", "surface-container-low": "#f2f3ff", "error": "#ba1a1a", "primary-container": "#7ae332", "glass-overlay": "rgba(15, 23, 42, 0.40)", "tertiary-container": "#ffb5d6", "on-primary": "#ffffff", "on-primary-fixed-variant": "#225100", "on-tertiary": "#ffffff", "on-surface": "#131b2e", "macaron-rose": "#FCE7F3", "secondary-fixed-dim": "#7bd0ff", "on-tertiary-container": "#982669", "surface-container-highest": "#dae2fd", "on-tertiary-fixed-variant": "#85145a", "surface-container-high": "#e2e7ff", "on-surface-variant": "#3f4a37", "on-error": "#ffffff", "on-primary-fixed": "#0a2100", "outline": "#6f7b65", "text-primary": "#0F172A", "surface-container-lowest": "#ffffff", "primary-fixed-dim": "#76df2d", "error-container": "#ffdad6", "macaron-lime": "#D9F99D", "tertiary": "#a43073", "inverse-surface": "#283044", "surface-dim": "#d2d9f4", "outline-variant": "#bfcab1", "surface": "#faf8ff", "on-secondary-fixed": "#001e2c", "primary": "#306c00", "surface-variant": "#dae2fd", "on-primary-container": "#2b6100", "on-error-container": "#93000a", "secondary-container": "#40c2fd", "secondary": "#00668a", "on-secondary-fixed-variant": "#004c69", "tertiary-fixed": "#ffd8e7", "on-tertiary-fixed": "#3d0026", "primary-fixed": "#91fc4a", "on-background": "#131b2e" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-md": "0.75rem", "space-lg": "1rem", "gutter": "0.5rem", "space-xs": "0.25rem", "margin": "0.75rem", "space-xl": "1.25rem", "space-2xl": "1.75rem", "margin-detail": "1rem", "space-sm": "0.5rem" }, "fontFamily": { "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "title-sm": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "label-mini": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"] }, "fontSize": { "headline-xl-mobile": ["26px", { "lineHeight": "34px", "fontWeight": "800" }], "headline-lg": ["22px", { "lineHeight": "30px", "fontWeight": "700" }], "title-sm": ["16px", { "lineHeight": "22px", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "22.4px", "fontWeight": "400" }], "label-mini": ["10px", { "lineHeight": "12px", "fontWeight": "500" }], "body-lg": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "label-md": ["13px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-xl": ["32px", { "lineHeight": "40px", "fontWeight": "800" }], "headline-md": ["18px", { "lineHeight": "24px", "fontWeight": "700" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#faf8ff;}body{overscroll-behavior:none;min-height:max(884px,100dvh);}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen relative antialiased"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)] pt-safe"><div class="h-6 px-margin flex items-center justify-between text-text-primary font-label-md text-label-md select-none"><span>9:41</span><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">signal_cellular_alt</span><span class="material-symbols-outlined text-[16px]">wifi</span><span class="material-symbols-outlined text-[18px]">battery_full</span></div></div><div class="h-14 px-margin-detail flex items-center justify-between"><div class="flex items-center gap-space-xs"><button aria-label="返回" class="w-11 h-11 flex items-center justify-center rounded-full text-text-primary hover:bg-surface-container/60 transition-colors" onclick="if(history.length>1){history.back()}else{location.href='index.html'}"><span class="material-symbols-outlined text-[24px]">arrow_back_ios_new</span></button><h1 class="font-headline-md text-headline-md text-text-primary tracking-tight">S19 协议与隐私政策</h1></div><div class="flex items-center gap-space-sm"><button aria-label="更多操作" class="w-11 h-11 flex items-center justify-center rounded-full text-text-secondary hover:text-text-primary hover:bg-surface-container/60 transition-colors"><span class="material-symbols-outlined text-[22px]">more_horiz</span></button></div></div></header><main class="flex flex-col relative w-full pt-20 pb-safe bg-surface min-h-screen"><div class="flex flex-col w-full px-margin-detail pb-12">
+<!-- Subtle Ambient Glow -->
+<div class="relative w-full">
+<div class="absolute -top-6 -right-6 w-36 h-36 bg-court-volt/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute top-40 -left-10 w-44 h-44 bg-macaron-sky/30 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Segmented Tab Bar -->
+<div class="w-full bg-surface-container-low p-1 rounded-full flex items-center justify-between shadow-sm relative z-10 mb-space-lg">
+<button class="flex-1 py-2 px-space-xs text-center rounded-full font-label-md text-label-md transition-all duration-200 bg-surface-container-lowest text-text-primary shadow-sm" id="tab-terms" onclick="switchPolicyTab('terms')">
+        用户服务协议
+      </button>
+<button class="flex-1 py-2 px-space-xs text-center rounded-full font-label-md text-label-md transition-all duration-200 text-text-secondary hover:text-text-primary" id="tab-privacy" onclick="switchPolicyTab('privacy')">
+        隐私保护政策
+      </button>
+<button class="flex-1 py-2 px-space-xs text-center rounded-full font-label-md text-label-md transition-all duration-200 text-text-secondary hover:text-text-primary" id="tab-third" onclick="switchPolicyTab('third')">
+        第三方共享清单
+      </button>
+</div>
+<!-- Document Meta & Highlight Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm relative overflow-hidden mb-space-lg">
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-primary-container text-on-primary-container font-label-mini text-label-mini">
+<span class="material-symbols-outlined text-[15px]">verified_user</span>
+</span>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">Official Terms &amp; Policy</span>
+</div>
+<span class="inline-flex items-center gap-1 text-court-volt bg-on-surface px-2.5 py-0.5 rounded-full font-label-mini text-label-mini">
+<span class="w-1.5 h-1.5 rounded-full bg-court-volt animate-ping"></span>
+          现行生效中
+        </span>
+</div>
+<h2 class="font-headline-md text-headline-md text-text-primary mb-1" id="doc-title">
+        匹小将用户服务协议与双端协同规范
+      </h2>
+<p class="font-body-sm text-body-sm text-text-tertiary mb-space-md" id="doc-version">
+        版本生效日期：2025年02月18日 · 适用平台：微信小程序与独立APP
+      </p>
+<!-- Key Highlights Box -->
+<div class="bg-macaron-lime/25 rounded-lg p-space-md flex gap-space-sm items-start">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">lightbulb</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-primary font-bold">【划重点 · 极简合规承诺】</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            匹小将遵循轻量不打扰原则，绝不强制收集通讯录与精准地理位置，仅在您进行收藏和多端同步时保存必要账号凭据。
+          </p>
+</div>
+</div>
+</div>
+<!-- Legal Article Content View: User Terms -->
+<div class="flex flex-col gap-space-md" id="content-terms">
+<!-- Article I -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center gap-space-xs mb-space-sm">
+<div class="w-1.5 h-4 bg-court-volt rounded-full"></div>
+<h3 class="font-title-sm text-title-sm text-text-primary">一、 服务说明与账号注册</h3>
+</div>
+<div class="space-y- space-y-2 text-text-secondary font-body-md text-body-md leading-relaxed">
+<p>
+            1.1 <strong class="text-text-primary font-medium">双端账号互通机制：</strong> 用户可通过微信授权或大陆手机号快捷完成账号注册。您的“匹小将”账号将在微信小程序端与独立 iOS/Android APP 端唯一互通。
+          </p>
+<p>
+            1.2 <strong class="text-text-primary font-medium">云端漫游规则：</strong> 您在任何一端标记的球场收藏、装备试打笔记、技能树打卡进度，均通过端到端加密通道即时同步至云端凭据库，保障无缝切换体验。
+          </p>
+<p>
+            1.3 用户承诺使用真实有效的实名认证手机号注册，不得利用自动化脚本批量创建虚假球友账号。
+          </p>
+</div>
+</section>
+<!-- Article II -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center gap-space-xs mb-space-sm">
+<div class="w-1.5 h-4 bg-court-volt rounded-full"></div>
+<h3 class="font-title-sm text-title-sm text-text-primary">二、 用户个人信息保护与权限</h3>
+</div>
+<div class="space-y-2 text-text-secondary font-body-md text-body-md leading-relaxed">
+<p>
+            2.1 <strong class="text-text-primary font-medium">非必要权限零调用：</strong> 匹小将承诺<span class="text-primary font-semibold">永不请求访问通讯录、精准后台GPS定位、麦克风录音</span>等与匹克球打卡无实质关联的高危系统权限。
+          </p>
+<p>
+            2.2 <strong class="text-text-primary font-medium">模糊定位授权说明：</strong> 仅在用户手动使用“附近球场”检索功能时，经显式弹窗授权，系统获取经纬度小数点后2位的粗略城市范围（误差范围 1-2 公里），且从不将位置记录持久化存档。
+          </p>
+<p>
+            2.3 <strong class="text-text-primary font-medium">传输与存储加密：</strong> 全线网络交互遵从 TLS 1.3 传输加密标准，敏感用户身份特征均经散列脱敏保存在云安全节点。
+          </p>
+</div>
+</section>
+<!-- Article III -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center gap-space-xs mb-space-sm">
+<div class="w-1.5 h-4 bg-court-volt rounded-full"></div>
+<h3 class="font-title-sm text-title-sm text-text-primary">三、 平台内容与知识产权</h3>
+</div>
+<div class="space-y-2 text-text-secondary font-body-md text-body-md leading-relaxed">
+<p>
+            3.1 平台展示的匹克球资讯、击球教学动图及规则示意图归属匹小将及授权内容团队所有，未经许可不得二次商业倒卖。
+          </p>
+<p>
+            3.2 <strong class="text-text-primary font-medium">非交易与种草声明：</strong> 装备评测数据（平衡点、击球甜区、硬度参数等）均为客观测试与玩家体验沉淀，仅供日常运动种草与选购参考，平台不提供任何自营装备销售与交易兜底担保。
+          </p>
+<p>
+            3.3 用户在交流社区发布的打球合影、场地图文笔记应保证原创或享有版权，不得侵犯他人肖像权与隐私权。
+          </p>
+</div>
+</section>
+<!-- Article IV -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center gap-space-xs mb-space-sm">
+<div class="w-1.5 h-4 bg-court-volt rounded-full"></div>
+<h3 class="font-title-sm text-title-sm text-text-primary">四、 账号注销与数据导出</h3>
+</div>
+<div class="space-y-2 text-text-secondary font-body-md text-body-md leading-relaxed">
+<p>
+            4.1 用户有权在任意时刻通过「我的 - 设置 - 账号安全」发起即时账号注销或一键数据副本导出请求。
+          </p>
+<p>
+            4.2 <strong class="text-text-primary font-medium">完全脱敏原则：</strong> 确认注销后，除法律法规明确要求的审计日志保存期限外，您的历史收藏夹、打卡徽章及双端登录Token将在 24 小时内彻底从生产数据库粉碎并脱敏清除。
+          </p>
+</div>
+</section>
+</div>
+<!-- Tab 2: Privacy Policy (Hidden initially) -->
+<div class="hidden flex-col gap-space-md" id="content-privacy">
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center gap-space-xs mb-space-sm">
+<div class="w-1.5 h-4 bg-court-volt rounded-full"></div>
+<h3 class="font-title-sm text-title-sm text-text-primary">隐私保护政策详情</h3>
+</div>
+<div class="space-y-2 text-text-secondary font-body-md text-body-md leading-relaxed">
+<p>我们如何收集和使用您的信息：仅包含微信 OpenID（用于身份标识）以及您自愿填写的球龄与段位标签。</p>
+<p>Cookies与同类技术声明：小程序与APP本地存储（Local Storage）仅用于记住您的界面偏好（如夜间模式与静音播放教学），不追踪跨域广告偏好。</p>
+<p>您有权通过客服通道撤回任何已作出的单项权限授权。</p>
+</div>
+</section>
+</div>
+<!-- Tab 3: Third Party List (Hidden initially) -->
+<div class="hidden flex-col gap-space-md" id="content-third">
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center gap-space-xs mb-space-sm">
+<div class="w-1.5 h-4 bg-court-volt rounded-full"></div>
+<h3 class="font-title-sm text-title-sm text-text-primary">第三方 SDK 与数据共享目录</h3>
+</div>
+<div class="space-y-3 text-text-secondary font-body-md text-body-md leading-relaxed">
+<div class="bg-surface-container-low rounded-lg p-3">
+<div class="font-title-sm text-title-sm text-text-primary mb-1">腾讯微信 OpenSDK</div>
+<p class="font-body-sm text-body-sm">使用目的：用于在微信小程序端实现快捷免密登录与分享至好友/朋友圈。</p>
+<p class="font-body-sm text-body-sm text-text-tertiary">收集范围：基础头像昵称凭证，无设备识别码。</p>
+</div>
+<div class="bg-surface-container-low rounded-lg p-3">
+<div class="font-title-sm text-title-sm text-text-primary mb-1">腾讯地图定位插件</div>
+<p class="font-body-sm text-body-sm">使用目的：球场地图标绘与基于大致城市距离的场馆排序推荐。</p>
+<p class="font-body-sm text-body-sm text-text-tertiary">收集范围：模糊经纬度坐标，离线即焚。</p>
+</div>
+</div>
+</section>
+</div>
+<!-- Subtle Brand Watermark & Compliance Seal -->
+<div class="flex flex-col items-center justify-center my-space-2xl opacity-60">
+<div class="w-8 h-8 rounded-full bg-court-volt/30 flex items-center justify-center mb-1 text-primary">
+<span class="material-symbols-outlined text-[18px]">sports_tennis</span>
+</div>
+<span class="font-label-sm text-label-sm text-text-tertiary tracking-widest uppercase">Pickle Champ Security Guarantee</span>
+<span class="font-label-mini text-label-mini text-text-tertiary mt-0.5">匹小将 · 运动数据合规与隐私保护委员会</span>
+</div>
+<!-- Bottom Fixed Agreement Confirmation Action Bar -->
+<div class="sticky bottom-4 z-40 w-full mt-4">
+<div class="bg-surface-container-lowest/90 backdrop-blur-xl rounded-full p-2 shadow-xl flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs pl-space-md">
+<input checked="" class="w-4 h-4 rounded text-primary accent-primary cursor-pointer" id="agree-checkbox" type="checkbox"/>
+<label class="font-label-sm text-label-sm text-text-secondary select-none cursor-pointer" for="agree-checkbox">
+            已阅读并认可上述协议与规范
+          </label>
+</div>
+<button class="py-2.5 px-space-xl bg-court-volt hover:bg-primary-fixed-dim active:scale-95 text-text-primary font-label-md text-label-md rounded-full shadow-sm transition-all duration-150 font-bold shrink-0" id="agree-confirm-btn" onclick="handleAgree()">
+          我已知晓
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function switchPolicyTab(tabKey) {
+    const tabs = ['terms', 'privacy', 'third'];
+    const titles = {
+      terms: '匹小将用户服务协议与双端协同规范',
+      privacy: '匹小将个人信息与隐私保护指南',
+      third: '第三方数据共享与SDK合规接入清单'
+    };
+    const versions = {
+      terms: '版本生效日期：2025年02月18日 · 适用平台：微信小程序与独立APP',
+      privacy: '版本生效日期：2025年02月18日 · 修订频率：每年或依规调整',
+      third: '版本核验日期：2025年02月10日 · 合作方准入审核已通过'
+    };
+
+    tabs.forEach(tab => {
+      const btn = document.getElementById('tab-' + tab);
+      const content = document.getElementById('content-' + tab);
+      if (tab === tabKey) {
+        btn.className = 'flex-1 py-2 px-space-xs text-center rounded-full font-label-md text-label-md transition-all duration-200 bg-surface-container-lowest text-text-primary shadow-sm';
+        content.classList.remove('hidden');
+        content.classList.add('flex');
+      } else {
+        btn.className = 'flex-1 py-2 px-space-xs text-center rounded-full font-label-md text-label-md transition-all duration-200 text-text-secondary hover:text-text-primary';
+        content.classList.add('hidden');
+        content.classList.remove('flex');
+      }
+    });
+
+    document.getElementById('doc-title').innerText = titles[tabKey];
+    document.getElementById('doc-version').innerText = versions[tabKey];
+  }
+
+  function handleAgree() {
+    const chk = document.getElementById('agree-checkbox');
+    const btn = document.getElementById('agree-confirm-btn');
+    if (!chk.checked) {
+      alert('请先勾选确认已阅读协议');
+      return;
+    }
+    btn.innerHTML = '<span class="material-symbols-outlined text-[16px] animate-spin inline-block align-middle mr-1">check_circle</span>已确认';
+    btn.disabled = true;
+    setTimeout(() => {
+      window.history.back();
+    }, 450);
+  }
+</script></main><div id="pxj-toast" role="status" aria-live="polite" style="position:fixed;left:50%;bottom:96px;transform:translateX(-50%) translateY(16px);z-index:9999;background:rgba(15,23,42,.92);color:#fff;padding:10px 18px;border-radius:999px;font-size:13px;line-height:1.4;opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;box-shadow:0 10px 30px rgba(0,0,0,.22);white-space:nowrap;max-width:88vw;overflow:hidden;text-overflow:ellipsis"></div>
+<script>
+function pxjToast(msg){
+  var t=document.getElementById('pxj-toast');
+  if(!t)return;
+  t.textContent=msg;
+  t.style.opacity='1';
+  t.style.transform='translateX(-50%) translateY(0)';
+  clearTimeout(window._pxjToastTimer);
+  window._pxjToastTimer=setTimeout(function(){
+    t.style.opacity='0';
+    t.style.transform='translateX(-50%) translateY(16px)';
+  },2000);
+}
+</script></body></html>
