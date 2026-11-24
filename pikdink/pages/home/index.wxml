@@ -1,0 +1,23 @@
+<view class="screen screen--tabs">
+  <view class="top">
+    <view class="title">匹小将</view>
+    <navigator class="search-link" url="/pages/search/index">搜索</navigator>
+  </view>
+  <view class="subtitle">一拍尽兴，小将同行。</view>
+  <navigator class="hero" url="/pages/detail/index?id={{featured.id}}">
+    <image class="hero-image" src="{{featured.image}}" mode="aspectFill" />
+    <view class="hero-shade"></view>
+    <view class="hero-body">
+      <text class="pill">{{featured.category}}</text>
+      <view class="hero-title">{{featured.title}}</view>
+      <view class="hero-summary">{{featured.summary}}</view>
+    </view>
+  </navigator>
+  <view class="shortcuts">
+    <navigator wx:for="{{sections}}" wx:key="id" class="shortcut shortcut--{{item.id}}" open-type="redirect" url="/pages/{{item.id}}/index">{{item.name}}</navigator>
+    <navigator class="shortcut shortcut--favorites" url="/pages/favorites/index">收藏</navigator>
+  </view>
+  <view class="section-title">为你推荐</view>
+  <content-card wx:for="{{items}}" wx:key="id" item="{{item}}" />
+</view>
+<bottom-nav active="home" />

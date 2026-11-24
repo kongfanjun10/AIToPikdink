@@ -1,0 +1,25 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/news/index",
+    "pages/tutorials/index",
+    "pages/courts/index",
+    "pages/gear/index",
+    "pages/profile/index",
+    "pages/detail/index",
+    "pages/search/index",
+    "pages/favorites/index"
+  ],
+  "window": {
+   "navigationStyle": "custom",
+    "navigationBarTitleText": "匹小将",
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#f8fafc",
+    "backgroundColor": "#f8fafc"
+  },
+  "usingComponents": {
+    "bottom-nav": "/components/bottom-nav/index",
+    "content-card": "/components/content-card/index"
+  },
+  "style": "v2"
+}

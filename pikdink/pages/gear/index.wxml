@@ -1,0 +1,2 @@
+<import src="../../templates/section.wxml" />
+<template is="section" data="{{section, items, categories, activeCategory}}" />

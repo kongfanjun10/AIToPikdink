@@ -1,0 +1,18 @@
+page {
+  background: #f8fafc;
+  color: #0f172a;
+  font-size: 30rpx;
+  line-height: 1.5;
+}
+.screen { padding: 32rpx 32rpx 48rpx; }
+.screen--tabs { padding-bottom: calc(160rpx + env(safe-area-inset-bottom)); }
+.title { font-size: 60rpx; font-weight: 800; line-height: 1.14; }
+.subtitle { margin-top: 16rpx; color: #536477; font-size: 28rpx; }
+.section-title { margin: 42rpx 0 20rpx; font-size: 36rpx; font-weight: 750; }
+.empty { padding: 72rpx 20rpx; color: #536477; text-align: center; }
+.pill { display: inline-block; padding: 8rpx 20rpx; border-radius: 999rpx; background: #e9f7d9; color: #285b10; font-size: 24rpx; font-weight: 700; }
+.chips { display: flex; flex-wrap: wrap; gap: 12rpx; margin: 28rpx 0; }
+.chip { padding: 12rpx 24rpx; border-radius: 999rpx; background: #eaf0f6; color: #405268; font-size: 26rpx; }
+.chip--active { background: #d9f99d; color: #285b10; font-weight: 700; }
+.primary-button { background: #d9f99d; color: #234e0c; border-radius: 28rpx; font-size: 30rpx; font-weight: 700; }
+.primary-button::after { border: 0; }

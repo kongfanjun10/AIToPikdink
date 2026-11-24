@@ -1,0 +1,6 @@
+<view class="screen">
+  <input class="search-input" aria-label="搜索内容" placeholder="搜索资讯、教学、场地或装备" value="{{query}}" bindinput="updateQuery" confirm-type="search" />
+  <view class="empty" wx:if="{{!hasQuery}}">试试搜索「新手」或「球拍」</view>
+  <view class="empty" wx:elif="{{!items.length}}">没有找到相关内容</view>
+  <content-card wx:for="{{items}}" wx:key="id" item="{{item}}" />
+</view>
