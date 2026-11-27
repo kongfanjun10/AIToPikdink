@@ -1,8 +1,0 @@
-<navigator class="card" url="/pages/detail/index?id={{item.id}}" hover-class="card--pressed">
-  <image class="cover" src="{{item.image}}" mode="aspectFill" lazy-load />
-  <view class="body">
-    <view class="category">{{item.typeName}} · {{item.category}}</view>
-    <view class="headline">{{item.title}}</view>
-    <view class="summary">{{item.summary}}</view>
-  </view>
-</navigator>

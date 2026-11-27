@@ -1,7 +1,0 @@
-<view class="screen">
-  <view class="title">我的收藏</view>
-  <view class="subtitle">已收藏 {{items.length}} 条内容</view>
-  <view class="section-title" wx:if="{{items.length}}">收藏内容</view>
-  <content-card wx:for="{{items}}" wx:key="id" item="{{item}}" />
-  <view wx:if="{{!items.length}}" class="empty">在内容详情页点击「加入收藏」，就能在这里找到。</view>
-</view>

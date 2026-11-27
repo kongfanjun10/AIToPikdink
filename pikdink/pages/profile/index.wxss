@@ -1,2 +1,0 @@
-.entry { display: flex; justify-content: space-between; align-items: center; margin-top: 32rpx; padding: 28rpx; border-radius: 28rpx; background: #fff; font-weight: 700; }
-.count { color: #536477; font-weight: 400; font-size: 26rpx; }

@@ -1,9 +1,0 @@
-<view class="screen screen--tabs">
-  <view class="title">我的</view>
-  <view class="subtitle">收藏记录保存在当前设备。</view>
-  <navigator class="entry" url="/pages/favorites/index">
-    <text>我的收藏</text>
-    <text class="count">{{count}} 条 ›</text>
-  </navigator>
-</view>
-<bottom-nav active="profile" />

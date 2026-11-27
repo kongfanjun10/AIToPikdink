@@ -1,7 +1,0 @@
-.card { display: flex; align-items: center; padding: 18rpx; margin-bottom: 18rpx; background: #fff; border-radius: 30rpx; }
-.card--pressed { background: #edf5e8; }
-.cover { width: 160rpx; height: 144rpx; flex-shrink: 0; border-radius: 22rpx; background: #e9f7d9; }
-.body { padding: 0 12rpx 0 20rpx; }
-.category { color: #306c00; font-size: 22rpx; font-weight: 700; }
-.headline { margin-top: 3rpx; color: #0f172a; font-size: 30rpx; font-weight: 700; }
-.summary { margin-top: 4rpx; color: #536477; font-size: 24rpx; }
